@@ -1,0 +1,24 @@
+{
+  "name": "testes-unitarios-modulo-1",
+  "version": "1.0.0",
+  "description": "testes-unitarios-modulo-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanmferreira/testes-unitarios-modulo-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanmferreira/testes-unitarios-modulo-1/issues"
+  },
+  "homepage": "https://github.com/allanmferreira/testes-unitarios-modulo-1#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3"
+  }
+}
