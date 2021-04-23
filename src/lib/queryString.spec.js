@@ -1,4 +1,4 @@
-const { queryString } = require('./queryString');
+const { queryString, parse } = require('./queryString');
 
 describe('Object do query string', () => {
     it('should create a query string when a object is received', () => {
@@ -32,4 +32,19 @@ describe('Object do query string', () => {
     });
 });
 
-describe('Query string to object', () => {});
+describe('Query string to object', () => {
+    it('should convet a query string to object', () => {
+        const qs = 'name=Allan&profession=Developer';
+        expect(parse(qs)).toEqual({
+            name: 'Allan',
+            profession: 'Developer',
+        });
+    });
+
+    it('should recieve a single key query string and convert to object', () => {
+        const qs = 'name=Allan';
+        expect(parse(qs)).toEqual({
+            name: 'Allan',
+        });
+    });
+});
